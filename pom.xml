@@ -10,6 +10,7 @@
     <properties>
         <java.version>1.8</java.version>
         <kotlin.version>1.2.51</kotlin.version>
+        <spark.version>2.9.1</spark.version>
     </properties>
  
     <build>
@@ -112,6 +113,16 @@
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib-jdk8</artifactId>
             <version>${kotlin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sparkjava</groupId>
+            <artifactId>spark-core</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+         <dependency>
+            <groupId>com.sparkjava</groupId>
+            <artifactId>spark-kotlin</artifactId>
+            <version>1.0.0-alpha</version>
         </dependency>
     </dependencies>
 </project>

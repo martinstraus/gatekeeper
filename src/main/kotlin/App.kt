@@ -1,5 +1,11 @@
 package gatekeeper
 
+import spark.kotlin.*
+
 fun main(args: Array<String>) {
-    println("Hello World!")
+    val http: Http = ignite()
+
+    http.get("/hello") {
+        "Hello Spark Kotlin!"
+    }
 }
